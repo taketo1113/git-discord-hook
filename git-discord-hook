@@ -11,11 +11,11 @@
 # Based on post-receive.irc by Mikael Fridh <frimik@gmail.com> https://gist.github.com/1821358
 #
 # Settings needed:
-#  git config hooks.discord.webhook-url "'https://discordapp.com/api/webhooks/xxx-generatedkey-xxx/yyy-generatedkey-yyy"
+#  git config hooks.discord.webhook-url "'https://discordapp.com/api/webhooks/{webhook.id}/{webhook.token}"
 #
 function help() {
   echo "Required config settings:"
-  echo " git config hooks.discord.webhook-url 'https://discordapp.com/api/webhooks/xxx-generatedkey-xxx/yyy-generatedkey-yyy'"
+  echo " git config hooks.discord.webhook-url 'https://discordapp.com/api/webhooks/{webhook.id}/{webhook.token}'"
   echo " git config hooks.discord.show-only-last-commit true #optional"
   echo " git config hooks.discord.show-full-commit true #optional"
   echo " git config hooks.discord.username 'git' #optional"

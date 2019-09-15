@@ -22,15 +22,15 @@ Finally, `chmod +x post-receive` to allow the script to be executed.
 
 Add an Incoming WebHooks integration in your Discord by going to:
 
-    System Console > Integrations > Custom Integrations
+    Server Settings -> Webhooks -> Create Webhook
 
 For a normal/non-bare repo, configure the webhook URL
 
-    git config hooks.discord.webhook-url 'https://discordapp.com/api/webhooks/xxx-generatedkey-xxx/yyy-generatedkey-yyy'
+    git config hooks.discord.webhook-url 'https://discordapp.com/api/webhooks/{webhook.id}/{webhook.token}'
 
 For a bare repo:
 
-    git config -f /path/to/your/repo/config hooks.discord.webhook-url 'https://discordapp.com/api/webhooks/xxx-generatedkey-xxx/yyy-generatedkey-yyy'
+    git config -f /path/to/your/repo/config hooks.discord.webhook-url 'https://discordapp.com/api/webhooks/{webhook.id}/{webhook.token}'
 
 ## Optional
 Specify a username to post as. If not specified, the default name `incoming-webhook` will be used:
