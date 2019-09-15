@@ -296,7 +296,7 @@ function notify() {
 
   curl -s \
       -d "payload=$payload" \
-      "$webhook_url" \
+      "${webhook_url}/slack" \
       >/dev/null
 
 }
