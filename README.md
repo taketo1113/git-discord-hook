@@ -33,14 +33,6 @@ For a bare repo:
     git config -f /path/to/your/repo/config hooks.discord.webhook-url 'https://discordapp.com/api/webhooks/xxx-generatedkey-xxx/yyy-generatedkey-yyy'
 
 ## Optional
-Specify a channel to post in Discord instead of the default:
-
-    git config hooks.discord.channel '#general'
-
-        '#channelname' - post to channel
-        '@username' - direct message to user
-        'groupname' - post to group
-
 Specify a username to post as. If not specified, the default name `incoming-webhook` will be used:
 
     git config hooks.discord.username 'git'
@@ -48,10 +40,6 @@ Specify a username to post as. If not specified, the default name `incoming-webh
 Specify an icon to display in Discord instead of the default:
 
     git config hooks.discord.icon-url 'https://example.com/icon.png'
-
-Specify an emoji icon to display in Discord instead of the default:
-
-    git config hooks.discord.icon-emoji ':twisted_rightwards_arrows:'
 
 Specify a repository nice name that will be shown in messages:
 
